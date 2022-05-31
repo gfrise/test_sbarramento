@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+            
+        }
+        aside {
+            height: 100%;
+            width: 10%;
+            background-color: grey;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0px;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        main {
+            height: 100px;
+            width: 70%;
+            background-color: white;
+            border-bottom: 1px solid black;
+            display: flex;
+            align-items: center;
+            padding: 0px 30px;
+        }
+        section {
+            height: 100%;
+            width: 20%;
+            background-color: darkgrey;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 30px 0px;
+            align-items: center;
+        }
+
+        .rectangle {
+            background-color: darkgrey;
+            width: 40px;
+            height: 40px;
+        }
+
+        .circle {
+            background-color: darkgrey;
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+        }
+
+        .other_rectangle {
+            width: 100px;
+            height: 50px;
+
+            background-color: grey;
+        }
+
+        @media screen and (max-width:600px) {
+            aside {
+
+            }
+            section {
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="rectangle"></div>
+            <div class="circle"></div>
+        </aside>
+        <main>
+            
+            <input type="text" placeholder="Search...">
+            
+
+        </main>
+        <section>
+            <div class="other_rectangle">
+            </div>
+
+        </section>
+
+    
+
+
+    
+    </div>
+
+</body>
+</html>
